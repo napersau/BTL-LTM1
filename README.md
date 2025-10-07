@@ -29,29 +29,6 @@ python-tls-demo
 - **Encryption Demonstration**: Showcase encryption algorithms like AES-GCM and RSA.
 - **User-Friendly Menu**: Interactive menu for users to navigate through functionalities.
 
-## Setup Instructions
-
-1. **Clone the Repository**:
-   ```
-   git clone <repository-url>
-   cd python-tls-demo
-   ```
-
-2. **Install Dependencies**:
-   Ensure you have Python installed, then run:
-   ```
-   pip install -r requirements.txt
-   ```
-
-3. **Generate Certificates**:
-   Run the application and select the option to generate certificates.
-
-4. **Run the Demo**:
-   Execute the demo script:
-   ```
-   python run_demo.py
-   ```
-
 ## Usage
 
 - Start the server by selecting the appropriate option in the menu.
@@ -68,4 +45,3 @@ Demo: Custom HTTPS client/server với TLS implementation <br/>
 Innovation: Understanding secure communication <br/>
 Languages: C/C++, Java, Python (cryptography) <br/>
 Difficulty: Challenging - Complex security protocol <br/>
->>>>>>> 4a6ec88b7dcbfaa0effdb1a11d15ad118f7587e1
