@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Python TLS/SSL Implementation Demo
 
 This project demonstrates a simple implementation of TLS/SSL using Python. It includes a certificate manager, a TLS server, a TLS client, and encryption demonstrations. The project is designed for educational purposes to showcase how TLS works and how to implement it in Python.
@@ -60,3 +61,11 @@ python-tls-demo
 ## License
 
 This project is for educational purposes only. Feel free to modify and use it as needed.
+=======
+🟡 T30: Network Security Protocols - TLS/SSL Implementation <br/>
+Tech Focus: Handshake process, encryption, certificate validation <br/>
+Demo: Custom HTTPS client/server với TLS implementation <br/>
+Innovation: Understanding secure communication <br/>
+Languages: C/C++, Java, Python (cryptography) <br/>
+Difficulty: Challenging - Complex security protocol <br/>
+>>>>>>> 4a6ec88b7dcbfaa0effdb1a11d15ad118f7587e1
