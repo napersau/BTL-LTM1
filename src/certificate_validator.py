@@ -60,9 +60,9 @@ class AdvancedCertificateValidator:
         print("┌─ [1/7] Basic Certificate Information")
         results = {}
         
-        # Subject and Issuer
-        subject = dict(cert.subject)
-        issuer = dict(cert.issuer)
+        # Subject and Issuer - Fix dictionary conversion
+        subject_attrs = {attr.oid._name: attr.value for attr in cert.subject}
+        issuer_attrs = {attr.oid._name: attr.value for attr in cert.issuer}
         
         print(f"│  Subject: {self.format_name(cert.subject)}")
         print(f"│  Issuer: {self.format_name(cert.issuer)}")
@@ -97,8 +97,8 @@ class AdvancedCertificateValidator:
             results['key_strength'] = 'Strong' if key_size >= 2048 else 'Weak'
         
         results.update({
-            'subject': subject,
-            'issuer': issuer,
+            'subject': subject_attrs,
+            'issuer': issuer_attrs,
             'valid_time': is_valid_time,
             'days_until_expiry': days_until_expiry,
             'is_self_signed': cert.subject == cert.issuer

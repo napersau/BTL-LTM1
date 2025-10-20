@@ -96,21 +96,6 @@ class UIManager:
             menu_table.add_row("4", "🔐 Crypto", "Basic Encryption Demo", "Basic")
             
             menu_table.add_section()
-            
-            # Advanced Features
-            menu_table.add_row("5", "🔄 Handshake", "Manual TLS Handshake Simulation", "Advanced")
-            menu_table.add_row("6", "📜 Validation", "Advanced Certificate Validation", "Advanced")
-            menu_table.add_row("7", "📊 Protocol", "TLS Protocol & Cipher Analysis", "Advanced")
-            menu_table.add_row("8", "🛡️  Security", "Comprehensive Security Analysis", "Expert")
-            menu_table.add_row("9", "🔬 Advanced", "Advanced Cryptography Demos", "Expert")
-            
-            menu_table.add_section()
-            
-            # Comprehensive Demos
-            menu_table.add_row("10", "🏆 Full Audit", "Complete Security Audit", "Expert")
-            menu_table.add_row("11", "🎓 Educational", "Step-by-step Learning", "Beginner")
-            
-            menu_table.add_section()
             menu_table.add_row("0", "👋 Exit", "Exit Application", "-")
             
             self.console.print(menu_table)
@@ -118,24 +103,13 @@ class UIManager:
         else:
             # Fallback menu
             print("\n" + "="*80)
-            print("🔐 ADVANCED TLS/SSL DEMO OPTIONS:")
+            print("🔐 BASIC TLS/SSL DEMO OPTIONS:")
             print("="*80)
-            print("📋 BASIC OPERATIONS:")
+            print("📋 CORE OPERATIONS:")
             print("  1. Generate Certificates (CA & Server)")
             print("  2. Start TLS Server")
             print("  3. Run TLS Client (connect to server)")
             print("  4. Demo Encryption Algorithms (AES-GCM, RSA)")
-            print()
-            print("🚀 ADVANCED FEATURES:")
-            print("  5. Manual TLS Handshake Simulation")
-            print("  6. Advanced Certificate Validation")
-            print("  7. TLS Protocol & Cipher Suite Analysis")
-            print("  8. Comprehensive Security Analysis")
-            print("  9. Advanced Encryption Demonstrations")
-            print()
-            print("📊 COMPREHENSIVE DEMOS:")
-            print(" 10. Full Security Audit (All advanced features)")
-            print(" 11. Educational Demo (Step-by-step learning)")
             print()
             print("  0. Exit")
             print("="*80)
